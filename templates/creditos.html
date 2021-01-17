@@ -1,0 +1,152 @@
+<ion-view class="creditsView">
+
+<!--<img ng-click="closeCreditos()" id="close-creditos" src="./img/close-icon/3.png">-->
+<h4 ng-click="closeCreditos()" id="close-creditos"> VOLVER</h4>
+
+<ion-content style="top: 0 !important;" class="back">
+
+<div class="container-fluid main-menu">
+    <div class="item2 item-text-wrap fuente1">
+
+	<div class="row creditsRow">
+		<div class="col-xs-12 mainBox changed">
+			<div class="row">
+				<div ng-click="setCredit('team', $event)" class="col-50 headLeft activeCredit">
+					<p class="headsP">EQUIPO DE REALIZACIÓN</p>
+				</div>				
+				<div ng-click="setCredit('enterprise', $event)" class="col-50 headRight">
+					<p class="headsP">INSTITUCIONALES</p>
+				</div>				
+			</div>
+
+			<div ng-show="showTeam()" class="team">
+
+				<div class="row">
+					<div class="col-50 creditLeft">
+						<p>DIRECCIÓN DE PROYECTO</p>
+					</div>
+					<div class="col-50 creditRight">
+						<p>ING. YELENA ISLEN SAN JUAN</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-50 creditLeft">
+						<p>AUTOR DE CONTENIDOS</p>
+					</div>
+					<div class="col-50 creditRight">
+						<p>JESÚS GONZÁLEZ BAYOLO</p>
+						<p>ARMANDO SÁNCHEZ GARCÍA </p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-50 creditLeft">
+						<p>PROGRAMACIÓN</p>
+					</div>
+					<div class="col-50 creditRight">
+						<p>ING. YELENA ISLEN SAN JUAN</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-50 creditLeft">
+						<p>DISEÑO GRÁFICO</p>
+					</div>
+					<div class="col-50 creditRight">
+					    <p>DI. CARMEN MUSTELIER PETEIRA</p>
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-50 creditLeft">
+						<p>EDICIÓN Y CORRECCIÓN DE TEXTOS</p>
+					</div>
+					<div class="col-50 creditRight">
+						<p>LIC. YOEL MANUEL LUGONES VÁZQUEZ </p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-50 creditLeft">
+						<p>CONTROL DE LA CALIDAD</p>
+					</div>
+					<div class="col-50 creditRight">
+						<p>LIC. MAYLEN GESEN GALLINAL</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-50 creditLeft">
+						<p>ASEGURAMIENTO DE LA CALIDAD</p>
+					</div>
+					<div class="col-50 creditRight">
+                        <p>MSC. MERCEDES MARÍA SOSA HERNÁNDEZ</p>
+						<p>ING. MARELIS VIRGEN PÉREZ GARCÍA </p>
+					</div>
+				</div>				
+				
+			</div>
+
+			<div ng-show="showEnterprise()" class="enterprise">
+
+				<div class="row">
+					<div class="col-50 creditLeft">
+						<p>DIRECTORA GENERAL</p>
+					</div>
+					<div class="col-50 creditRight">
+						<p>MSC. BEATRIZ ALONSO BECERRA</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-50 creditLeft">
+						<p>DIRECTORA COMERCIAL</p>
+					</div>
+					<div class="col-50 creditRight">
+						<p>ING. DANIA MOLINA PIMIENTA</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-50 creditLeft">
+						<p>DIRECTORA DE DESARROLLO E INNOVACIÓN TECNOLÓGICA</p>
+					</div>
+					<div class="col-50 creditRight">
+						<p>ING. NIURKA ARMAS LOCK</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-50 creditLeft">
+						<p>DIRECTOR UEB PROYECTOS MULTIMEDIA</p>
+					</div>
+					<div class="col-50 creditRight">
+					    <p>LIC. JORGE ACOSTA EZCURRA</p>					    
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-50 creditLeft">
+						<p>GESTIÓN DE LA CALIDAD Y AUDITORÍA</p>
+					</div>
+					<div class="col-50 creditRight">
+						<p>MSC. MERCEDES MARÍA SOSA HERNÁNDEZ</p>
+					</div>
+				</div>						
+				
+			</div>
+
+			<div class="row isbnRow">
+				<div class="col">
+					ISBN 978-959-237-555-0
+				</div>				
+			</div>
+			<div class="row copyRow">
+				<div class="col">
+					COPYRIGHT CITMATEL, 2016
+				</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	
+</div>
+    </div>
+
+</ion-content>
+</ion-view>

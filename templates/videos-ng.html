@@ -1,0 +1,43 @@
+
+<div class="card" data-ng-controller="VideosCtrl">
+	<div class="item item-divider">	</div>
+	<div class="item3 item-text-wrap fuente">
+        <div class="col-xs-10 col-xs-offset-1" style="margin-top:10px;">
+            <div class="flexslider-vid">
+                <div class="flex-viewport">
+                    <!--<ul class="slides" style="width: 1800%; transition-duration: 0s; transform: translate3d(-804px, 0px, 0px);">-->
+                    <ul class="slides">
+                        <li class="clone" style="width: 804px; float: left; display: block;" ng-show="currentMediaVideo.tipo">
+                            <video id="player{{$index}}" class="video" loop="" controls="" poster="{{currentMediaVideo.poster}}">
+                            <source data-ng-repeat="src in currentMediaVideo.sources" type="{{src.type}}" src="{{src.src}}"/>
+                            <p> El navegador no soporta video HTML5  </p>
+                            </video>
+                            <br/>
+                            <span>{{currentMediaVideo.footer}}</span>
+                        </li>
+                        <!--<li data-ng-repeat="item in gallery" class="clone" style="width: 804px; float: left; display: block;">-->
+                        <!--<li data-dir-paginate="item in gallery | itemsPerPage: 1" data-pagination-id="same" class="clone" style="width: 804px; float: left; display: block;" data-ng-class="animation">-->
+                           <!--&lt;!&ndash;<a data-ng-click="openLightboxModal($index)">&ndash;&gt;-->
+                               <!--<video id="player{{$index}}" class="video" loop="" controls="" poster="{{item.poster}}">-->
+                                   <!--<source data-ng-repeat="src in item.sources" type="{{src.type}}" src="{{src.src}}"/>-->
+                                   <!--<p> Tu navegador no soporta video HTML5  </p>-->
+                               <!--</video>-->
+                               <!--<br/>-->
+                               <!--<span>{{item.footer}}</span>-->
+                           <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                        <!--</li>-->
+                     </ul>
+                    <!--<dir-pagination-controls-->
+                            <!--direction-links="true"-->
+                            <!--template-url="templates/dirPagination.tpl.html"-->
+                            <!--data-pagination-id="same"-->
+                           <!--&gt;-->
+                    <!--</dir-pagination-controls>-->
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+
+

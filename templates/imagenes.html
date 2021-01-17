@@ -1,0 +1,87 @@
+<ion-view class="home">
+
+<div ng-include="'./templates/topMenu.html'"></div>
+
+<ion-content scroll="false" class="back"> 
+	
+    <div class="row second-row" style="padding: 10px 0 0 0;">
+    	
+         <div class="col-xs-2-mod-small my-offset left-side">
+          <!--  <h2 class="img-header downsideheaderimg">GALERÍA</h2>-->
+             <div id="menu">
+                 <ul>
+                     <h2 ng-click="openLink1('capa');" ng-model="template" class="menuOption1 capa">Imágenes</h2>
+
+                         <ul>
+
+                             <h2 ng-click="openLink1('capa');" ng-model="template" class="menuOption1 capa">Capablanca</h2>
+                             <h2 ng-click="openLink1('capa');" ng-model="template" class="menuOption1 capa">Fidel</h2>
+
+                         </ul>
+                     </li>
+
+                 </ul>
+
+
+             </div>
+
+
+
+         </div>
+
+		<div class="col-xs-10 right-content">
+
+          <div class="col-xs-10 col-xs-offset-1">
+
+            <!--  <a class="fancybox fancy-link" href="./asset/img/almohada.jpg" data-fancybox-group="gallery" data-caption="">VER GALERÍA A PANTALLA COMPLETA</a>   -->
+
+           <!-- <div class="flexslider">
+                <ul class="slides">
+
+                    &lt;!&ndash; <li>
+                        <div class="gal-item"></div>
+                    </li> &ndash;&gt;
+
+                    <li><a class="fancybox" href="./asset/img/slider/almohada.png" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/almohada.png" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/anatomia.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/anatomia.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/anatomia2.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/anatomia2.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/bandaelastica.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/bandaelastica.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/bandaelasticaleft.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/bandaelastica2.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/bench.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/bench.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/bola_hielo.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/hielo.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/calcano.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/calcano.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/chair_1.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/silla.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/chair_2.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/silla2.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/esguince.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/esguince.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/dorsiflex.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/doxiflexion.jpg" /></a></li>          
+                    <li><a class="fancybox" href="./asset/img/flexion.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/flexion.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/flexiones.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/flexiones.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/flex-dorsales.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/flexores.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/fractura.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/fractura.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/gravedad.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/gravedad.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/laterales.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/laterales.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/pieplano.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/pieplano.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/pierna.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/pierna.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/puntillas.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/puntillas.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/flexores.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/plantares.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/woman_short.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/woman.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/woman_long.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/woman2.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/torcedura.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/torcedura.jpg" /></a></li>
+                    <li><a class="fancybox" href="./asset/img/yeso.jpg" data-fancybox-group="gallery" data-caption=""><img  src="./asset/img/slider/yeso.jpg" /></a></li>
+
+                </ul>
+            </div> -->
+
+          </div>             
+        </div>
+
+    </div>
+    <div class="col-xs-10-mod right-content">
+
+        <div ng-include="template"></div>
+
+    </div>
+
+</ion-content>
+
+</ion-view>

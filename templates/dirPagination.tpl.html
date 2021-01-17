@@ -1,0 +1,8 @@
+<ul class="flex-direction-nav" data-ng-if="1 < pages.length || !autoHide">
+    <li data-ng-if="directionLinks" data-ng-class="{ disabled : pagination.current == 1 }" >
+        <a href="" data-ng-click="setCurrent(pagination.current - 1);" class="flex-prev"></a>
+    </li>
+    <li data-ng-if="directionLinks" data-ng-class="{ disabled : pagination.current == pagination.last }" >
+        <a href=""  data-ng-click="setCurrent(pagination.current + 1)" class="flex-next"></a>
+    </li>
+</ul>

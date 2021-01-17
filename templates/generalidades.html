@@ -1,0 +1,26 @@
+<ion-view class="home">
+
+<div ng-include="'./templates/topMenu.html'"></div>
+
+<ion-content scroll="false" class="back">
+
+    <div class="row second-row" style="padding: 10px 0 0 0;">
+    	<div class="col-xs-2-mod my-offset left-side">
+
+
+            <!--<h2 class="img-header">ÍNDICE</h2>-->
+            <ion-scroll direction="y" style="height: 57vh;">
+                    <h2 ng-click="openPage(item);" data-ng-repeat="item in items" ng-model="template" class="menuOption intro">{{item.title}}</h2>
+
+           </ion-scroll>
+		</div>		
+		<div class="col-xs-10-mod right-content">
+                            
+            <div ng-include="contenido"></div>
+
+        </div>
+
+	</div>    
+
+</ion-content>
+</ion-view>

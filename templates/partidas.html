@@ -1,0 +1,41 @@
+
+<div class="card" data-ng-controller="FlashCtrl">
+	<div class="item item-divider">
+
+	</div>
+	<div class="item3 item-text-wrap fuente">
+        <div class="col-xs-10 col-xs-offset-1" style="margin-top:10px;">
+
+        <div class="flexslider-vid"  >
+            <div class="flex-viewport" style="overflow: hidden; position: relative;" id="flex">
+
+                <ul class="slides" id="slides" data-ng-if="onFlashView">
+                    <li
+                    class="clone"
+                    style="width: 804px; float: left; display: block; "
+                    data-ng-class="animation"
+                    ng-show="currentMediaVideo.tipo">
+                           <object type="application/x-shockwave-flash" class="partida" data="{{currentMediaVideo.src}}" >
+
+                           </object>
+
+                        <p class="ajustado4">
+                            <em class="izquierda">{{currentMediaVideo.footer}}</em>
+                        </p>
+
+                    </li>
+                    
+                </ul>
+
+          
+                </div>
+        </div>
+            </div>
+
+
+    </div>
+        </div>
+
+
+</div>
+

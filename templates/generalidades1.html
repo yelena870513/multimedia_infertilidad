@@ -1,0 +1,73 @@
+<ion-view class="home">
+
+<div ng-include="'./templates/topMenu1.html'"></div>
+
+<ion-content scroll="false" class="back"> 
+	
+    <div class="row second-row" style="padding: 10px 0 0 0;">
+    	<div class="col-xs-2-mod my-offset left-side">
+
+
+            <ion-scroll direction="y" style="height: 57vh;">
+                <div id="menu">
+                <ul>
+                    <li class="has-sub"><a title="" href="">Imágenes</a>
+
+                        <ul>
+
+                            <h2 ng-click="openLink1('campiones');" ng-model="template" class="menuOption1 campiones">Campeones</h2>
+                            <h2 ng-click="openLink1('capa');" ng-model="template" class="menuOption1 capa">Torneos Capablanca</h2>
+                            <h2 ng-click="openLink1('che');" ng-model="template" class="menuOption1 che">Ernesto “Che” Guevara</h2>
+                            <!--<h2 ng-click="openLink1('cobo');" ng-model="template" class="menuOption1 cobo">Eldis Cobo</h2>-->
+                            <h2 ng-click="openLink1('fidel');" ng-model="template" class="menuOption1 fidel">Simultánea gigante </h2>
+                            <!--<h2 ng-click="openLink1('piezas');" ng-model="template" class="menuOption1 piezas">Piezas de ajedrez</h2>-->
+                            <h2 ng-click="openLink1('talentos');" ng-model="template" class="menuOption1 talentos">Niños talentos</h2>
+                            <h2 ng-click="openLink1('villa');" ng-model="template" class="menuOption1 villa">Torneo de ajedrez </h2>
+
+                        </ul>
+                    </li>
+                    <li class="has-sub"><a title="" href="">Videos</a>
+
+                        <ul>
+                            <!--<h2 ng-click="openLink1('videos-ng');" ng-model="template" class="menuOption1 videos-ng">Videos</h2></a>-->
+                            <!--<h2 ng-click="openLink1('videos-fidel');" ng-model="template" class="menuOption1 videos-fidel">Fidel</h2></a>-->
+                            <h2 ng-repeat="item in gallery" ng-model="template" class="menuOption1 videos-ng"  ng-click="openLink1('videos-ng',item);">{{item.tipo}}</h2>
+                            <!--<h2 ng-click="openLink1('partidas');" ng-model="template" class="menuOption1 partidas">Partidas</h2></a>-->
+                        </ul>
+
+
+                        </li>
+                    <li class="has-sub"><a title="" href="">Partidas</a>
+
+                        <ul>
+                            <!--<h2 ng-click="openLink1('videos-ng');" ng-model="template" class="menuOption1 videos-ng">Videos</h2></a>-->
+                            <!--<h2 ng-click="openLink1('videos-fidel');" ng-model="template" class="menuOption1 videos-fidel">Fidel</h2></a>-->
+                            <h2 ng-repeat="item in swfGallery" ng-model="template" class="menuOption1 partidas"  ng-click="openLink1('partidas-ng',item);">{{item.tipo}}</h2>
+                            <!--<h2 ng-click="openLink1('partidas');" ng-model="template" class="menuOption1 partidas">Partidas</h2></a>-->
+                        </ul>
+
+
+                    </li>
+
+
+                </ul>
+
+
+
+            </div>
+                </ion-scroll>
+
+
+            <!--&ndash;&gt;</ion-scroll>-->
+		</div>
+
+		<div class="col-xs-10-mod right-content">
+                            
+            <div ng-include="template"></div>
+
+        </div>
+
+	</div>
+
+</ion-content>
+</ion-view>

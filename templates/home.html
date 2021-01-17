@@ -1,0 +1,76 @@
+<ion-view class="home">
+
+<!--<img ng-click="openExit()" id="close-home" alt="SALIR" src="./img/close-icon/0.png">-->
+<h4 ng-click="openExit()" id="close-home" >SALIR</h4>
+
+<ion-content scroll="false" style="top: 0 !important;" class="back">
+
+<div class="container-fluid main-menu">
+    
+    <div class="top-right-home">
+      <a href="#/app/creditos">CRÉDITOS</a>  	
+    	<!-- <div class="dot"></div>
+    	<a href="#">SONIDO</a>  -->    	
+    </div>
+
+	<div class="row" style="padding-top: 3.4em;">
+		<div class="col-xs-4 col-xs-offset-4 mainBox">
+			<img src="img/bluebox.png">
+		</div>
+	</div>
+	<div class="row1">
+		<p class="mainP">Al Comandante en Jefe, máximo promotor de nuestro programa de ajedrez, protagonista esencial del desarrollo del ajedrez en Cuba y además colaborador activo en aras de lograr una mayor cultura respecto al juego ciencia.</p>
+    </div>
+    <!--<div class="imgInicio" >-->
+        <!--<img src="img/imgInicio.jpg">-->
+    <!--</div>-->
+    <div class="row" ><!--style="padding-top: 31.5em;"-->
+		
+	    	<div class="col-xs-3 home1 downItems firstItem">
+	    		<a nav-transition="none" href="#/app/general/intro">
+	    		<h2 class="img-header">ÍNDICE</h2>
+
+				
+				<p class="img-caption">En esta sección se exponen de manera precisa y convincente, los antecedentes y hechos más relevantes del ajedrez en Cuba.</p>
+				</a>		
+			</div>
+		
+
+		<div class="col-xs-3 home1 downItems">
+			<a nav-transition="none" href="#/app/imagenes">
+			<h2 class="img-header">GALERÍA</h2>
+			<p class="img-caption">Se divide en imágenes y videos referentes a las temáticas del índice.</p>
+			</a>			
+		</div>
+
+		<div class="col-xs-3 home1 downItems">
+			<a nav-transition="none" href="#/app/autorsum">
+			<h2 class="img-header"> DE LOS AUTORES</h2>
+			<p class="img-caption">Se compone de la síntesis biográfica de los autores: Jesús González Bayolo y Armando Sánchez García.</p>
+			</a>		
+		</div>
+
+    </div>
+</div>
+
+</ion-content>
+
+<div style="background: #333;" class="md-modal md-exit md-effect-1" id="exit-modal" >
+    <div class="md-content">
+
+        <div class="load-modal fuente2">
+
+            <p>¿ Desea salir ?</p>
+            <div class="row">
+                <div ng-click="exitApp()" class="col-50 exitLeft">Sí</div>
+                <div ng-click="closeExit()" class="col-50 exitRight">No</div>
+            </div>
+                  
+        </div>        
+
+    </div>
+</div>
+
+<div class="md-overlay exit-overlay" ng-click="closeExit()"></div>
+
+</ion-view>
